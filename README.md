@@ -8,8 +8,11 @@ Home automation gives you access to control devices in your home from a mobile d
 
 When anyone presses the doorbell, home owner  will get a notification in the telegram app with a photo of that person. After that, we can easily unlock and lock the door from the telegram app.
 
-```c++
+### Explanation
 
+Importing Libraries
+Start by importing the required libraries.
+```ino
 #include <Arduino.h>
 #include <WiFi.h>
 #include <WiFiClientSecure.h>
@@ -18,6 +21,12 @@ When anyone presses the doorbell, home owner  will get a notification in the tel
 #include "esp_camera.h"
 #include <UniversalTelegramBot.h>
 #include <ArduinoJson.h>
+```
+
+fullcode
+```c++
+
+
 
 //const char* ssid = "JioFiber- 4G";
 //const char* password = "qwerty789";
