@@ -14,7 +14,10 @@ Some images of authorized people are registered in the esp32-cam with SD card .
 
 when someone is at the door , if the person is recognizable by the esp32cam as an authorized user then Door unlocks , else capture and send an image of the person to the home owner and let him / her take the decision.
 
-![Screenshot](screenshot.png)
+//![Screenshot](screenshot.png)
 
 
+###Demo : 
+
+Click on the image below for demo
 [![Watch the video](https://img.youtube.com/vi/Woi7MhA4UIs/maxresdefault.jpg)](https://youtu.be/Woi7MhA4UIs)
