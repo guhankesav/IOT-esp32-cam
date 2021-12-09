@@ -4,11 +4,11 @@
 
 Home automation gives you access to control devices in your home from a mobile device anywhere in the world. One of the biggest advantages of home automation is that it keeps your abode safe, and prevents accidental fires, water leaks, gas leaks, and other disasters. This project shows how we can use Telegram in our IoT and Home Automation projects. Home Security System using ESP32 CAM which will notify us on Telegram App about person entering the house by capturing and sending his photo to us and Door can be controlled by chatbot. With this project we can take multiple photos, unlock and lock the door from anywhere in the world with the Telegram app.
 
-## Version 1: [link](esp32cam_telegram_smart_door_lock.ino)
+## Version 1: [Code](esp32cam_telegram_smart_door_lock.ino)
 
 When anyone presses the doorbell, home owner  will get a notification in the telegram app with a photo of that person. After that, we can easily unlock and lock the door from the telegram app.
 
-## Version 2:
+## Version 2: [Code](esp32-cam_Facerecognition_and_telegram_smartlock.ino)
 
 Some images of authorized people are registered in the esp32-cam with SD card .
 
