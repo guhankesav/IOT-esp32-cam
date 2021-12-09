@@ -10,7 +10,7 @@ When anyone presses the doorbell, home owner  will get a notification in the tel
 
 ### Explanation
 
-Importing Libraries
+###### Importing Libraries
 Start by importing the required libraries.
 ```ino
 #include <Arduino.h>
@@ -22,6 +22,23 @@ Start by importing the required libraries.
 #include <UniversalTelegramBot.h>
 #include <ArduinoJson.h>
 ```
+###### Network Credentials
+Insert your network credentials in the following variables.
+```ino
+const char* ssid = "REPLACE_WITH_YOUR_SSID";
+const char* password = "REPLACE_WITH_YOUR_PASSWORD";
+```
+
+###### Telegram User ID
+Insert your chat ID. The one you’ve got from the IDBot.
+```ino
+String CHAT_ID = "XXXXXXXXXX";
+```
+
+
+
+
+
 
 fullcode
 ```c++
