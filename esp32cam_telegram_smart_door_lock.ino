@@ -7,18 +7,16 @@
 #include <UniversalTelegramBot.h>
 #include <ArduinoJson.h>
 
-//const char* ssid = "JioFiber- 4G";
-//const char* password = "qwerty789";
 
 const char* ssid = "Mozambi";
 const char* password = "olejidbt";
 
 
 // Initialize Telegram BOT
-//String BOTtoken = "1952601363:AAGD2wTgaSyFmrUKwzL7wmDZ_cjdTyKXP4I";  // your Bot Token (Get from Botfather) bot 1
-String BOTtoken = "2077344860:AAHwzob--KiRLLMzTPLnxWCoaGXQu7p5hic";  //bot 2
 
-String CHAT_ID = "818073028";
+String BOTtoken = "2077344860:AAHwzob--KiRLLMzTPLnxWC234XQu7p5hic";  //bot 
+
+String CHAT_ID = "81834458";
 
 bool sendPhoto = false;
 
@@ -136,40 +134,6 @@ void configInitCamera(){
   s->set_framesize(s, FRAMESIZE_CIF);  // UXGA|SXGA|XGA|SVGA|VGA|CIF|QVGA|HQVGA|QQVGA
 }
 
-//void handleNewMessages(int numNewMessages) {
-//  Serial.print("Handle New Messages: ");
-//  Serial.println(numNewMessages);
-//
-//  for (int i = 0; i < numNewMessages; i++) {
-//    String chat_id = String(bot.messages[i].chat_id);
-//    if (chat_id != CHAT_ID){
-//      bot.sendMessage(chat_id, "Unauthorized user", "");
-//      continue;
-//    }
-//    
-//    // Print the received message
-//    String text = bot.messages[i].text;
-//    Serial.println(text);
-//    
-//    String from_name = bot.messages[i].from_name;
-//    if (text == "/start") {
-//      String welcome = "Welcome , " + from_name + "\n";
-//      welcome += "Use the following commands to interact with the ESP32-CAM \n";
-//      welcome += "/photo : takes a new photo\n";
-//      welcome += "/flash : toggles flash LED \n";
-//      bot.sendMessage(CHAT_ID, welcome, "");
-//    }
-//    if (text == "/flash") {
-//      flashState = !flashState;
-//      digitalWrite(FLASH_LED_PIN, flashState);
-//      Serial.println("Change flash LED state");
-//    }
-//    if (text == "/photo") {
-//      sendPhoto = true;
-//      Serial.println("New photo request");
-//    }
-//  }
-//}
 void handleNewMessages(int numNewMessages){
   Serial.print("Handle New Messages: ");
   Serial.println(numNewMessages);
@@ -191,10 +155,7 @@ void handleNewMessages(int numNewMessages){
       sendPhoto = true;
       Serial.println("New photo request");
     }
-//    if (text == "/flash") {
-//      digitalWrite(FLASH_LED, !FLASH_LED);
-//      Serial.println("New Flash request");
-//    }
+
     if (text == "/lock"){
       String r_msg = lockDoor();
       bot.sendMessage(CHAT_ID, r_msg, "");
